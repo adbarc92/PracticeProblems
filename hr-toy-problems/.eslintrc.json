@@ -1,0 +1,22 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"env": {
+		"node": true,
+		"browser": true,
+		"es2020": true
+	},
+	"plugins": [
+		"react"
+	],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 9
+	},
+	"rules": {
+		"semi": 2,
+		"no-unused-vars": 1
+	}
+}

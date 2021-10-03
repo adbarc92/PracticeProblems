@@ -1,0 +1,20 @@
+{
+  "name": "toy-problem-tests",
+  "version": "1.0.0",
+  "description": "Starter files for student generated tests for their toy problems",
+  "main": "tp.specs.js",
+  "scripts": {
+		"test": "jest",
+		"watch:test": "jest --watch"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^26.6.3",
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "sinon": "^11.1.1"
+  }
+}
