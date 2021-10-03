@@ -1,0 +1,39 @@
+	
+Test Input	                        Expected Result	Result	Log
+20, false, true, 0, [0,10,20,30]	[0]	-	
+20, true, false, 0, [0,10,20,30]	[50]	-	
+20, false, true, 20, [0,10,20,30]	[0,20]	-	
+20, false, true, 0, [0,10,40]	    [0,40]	-	
+20, true, false, 0, [0,10,40]	    [30,60]	-	
+20, true, true, 0, [0,10,50]	    [0,30,50,70]	-	
+20, true, true, 10, [0,10,50]	    [0,10,20,30,50,60,70]	-
+
+
+// if an event happens within wait time of the previous event, it is part of the same cluster
+// Fire once on first event in a cluster
+// Fire once after last event in a cluster
+// Fire once during every interval ms during a cluster
+
+// True True
+    // Iterate through timestamps
+    // Start as cluster--first event is 0
+    // If next is not within wait time, no cluster
+        // Push next plus interval
+    // If next is within wait time, enter second loop
+        // Iterate from cluster start to cluster plus wait by interval number
+    // Edge: if wait number and next number are the same, cluster count continues
+// Approach
+    // onLast & onFirst
+        // Iterate through timestamps
+            // if difference between current and next is less than wait time, it is part of a cluster
+                // Cluster is true
+                // if interval is greater than zero
+                    // Loop start=curStamp, iterator=interval, end=wait
+                    // Update outer loop?
+                // else if interval is zero
+                // else - interval is negative
+            
+
+    // onLast
+
+    // onFirst
