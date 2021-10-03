@@ -1,3 +1,6 @@
 [submodule "CodeWars-Katas"]
 	path = CodeWars-Katas
 	url = https://github.com/adbarc92/CodeWars-Katas.git
+[submodule "hr-bld18-toy-problems"]
+	path = hr-bld18-toy-problems
+	url = https://github.com/adbarc92/hr-bld18-toy-problems
