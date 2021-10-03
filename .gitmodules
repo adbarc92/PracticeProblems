@@ -1,3 +1,3 @@
 [submodule "CodeWars-Katas"]
-	path = CodeWars-Katas
+	path = ./JS/CodeWars-Katas
 	url = https://github.com/adbarc92/CodeWars-Katas.git
