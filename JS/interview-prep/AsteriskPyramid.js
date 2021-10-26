@@ -36,6 +36,7 @@ const setCharAt = (str, index, newChar) => {
   return str.substring(0, index) + newChar + str.substring(index + 1);
 };
 
+// * Redo for Arrays
 const makeStarPyramid = (n) => {
   const maxLength = n * 2 - 1;
   let str = ''.padStart(maxLength, ' ');
